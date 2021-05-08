@@ -48,7 +48,7 @@
     height: 40px;
 }
 .innersec, .lifesec, .alifesec, .nftfactsec, .breakdown{
-    padding:60px 0px 0px 0px;
+    padding:100px 0px 0px 0px;
 }
 .side-main, .team-blockbg{
     position: relative;
@@ -61,7 +61,7 @@
     box-shadow: 0px 16px 16px 8px rgba(0, 0, 0, 0.25), inset 62.7333px -62.7333px 62.7333px rgba(24, 26, 31, 0.1), inset -62.7333px 63px 62.7333px -59px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(45px);
     border-radius: 16px;
-    padding: 25px;
+    padding: 40px 32px;
     min-height: 776px;
 }
 .side-main::after{
@@ -84,6 +84,7 @@
     -webkit-box-shadow: 5px 9px 15px 3px rgb(237 45 45 / 25%);
     box-shadow: 5px 9px 15px 3px rgb(237 45 45 / 25%);
     border-radius: 50%;
+    margin-right: 16px;
 }
 .side-logo{
     margin-bottom:25px;
@@ -91,29 +92,40 @@
 .side-logo img{
     width: 44px;
     height: 44px;
-    margin-right:15px;
+    margin-right: 15px;
 }
 .side-logo h3{
     display: inline-flex;
     align-items: center;
     font-size: 28px;
+    text-transform: uppercase;
 }
 .side-content h4{
     color:#B90D0D;
     font-size:20px;
     line-height: 32px;
+    margin-bottom: 0 !important;
 }
 .side-content p{
-    font-size: 12px;
-    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 32px;
     color:#DCDCDC;
 }
 .inner-mid-wrap{
-    padding:30px;
+    padding: 50px;
 }
-.inner-mid-intro h4, .tokenomic h4, .lifetokenomic h4, .alifetokenomic h4 .resources h4{
-    font-weight: 600;
+.inner-mid-intro h4, .tokenomic h4, .lifetokenomic h4, .alifetokenomic h4 {
+    font-weight: 700;
     line-height: 36px;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+.resources h4 {
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 24px;
+    letter-spacing: 0.05em;
 }
 .tokenomic h4, .lifetokenomic h4, .alifetokenomic h4{
     margin-top:30px;
@@ -183,8 +195,9 @@
     ;
 }
 .progress{
-    margin-top: 30px;
-    height: 2.05rem;
+    margin-top: 32px;
+    height: 2.75rem;
+    background-color: #0D0E13 !important;
 }
 .fair-bar, .treasury-bar, .vc-bar, .current-bar, .burned-bar, .iseed-bar, .emission-bar, .atreasury-bar, .surprise-bar{
     font-size: 12px;
@@ -193,10 +206,10 @@
     margin-top:40px;
 }
 .resources ul li a{
-    font-size: 12px;
+    font-size: 16px;
     color: #DCDCDC;
     text-decoration: none;
-    line-height: 30px;
+    line-height: 35px;
 }
 .resources ul li a:hover{
     color:#fff;
@@ -277,7 +290,10 @@
     font-weight: bold;
 }
 .nft-note{
-    margin-top:25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
 }
 .nft-note, .team-img{
     display: flex;
@@ -315,6 +331,7 @@
 /* TEAM PAGE */
 .team-heading h2{
     font-size: 32px;
+    color: white;
 }
 .team-block{
     background: rgba(31, 34, 41, 0.1);
@@ -324,7 +341,8 @@
     box-shadow: 0px 16px 16px 8px rgba(0, 0, 0, 0.25), inset 62.7333px -62.7333px 62.7333px rgba(24, 26, 31, 0.1), inset -62.7333px 63px 62.7333px -59px rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
+    min-height: 300px
 }
 .mt-3x{
     margin-top:30px;
@@ -353,16 +371,22 @@
     box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 35%);
     border-radius: 50%;
 }
-.team-name h6, .team-name p{
+.team-name h6{
     margin:0;
 }
+.team-name p{
+margin: 0;
+font-size: 16px;
+line-height: 22px;
+}
 .team-name h6{
-    line-height: 26px;
+    line-height: 24px;
     font-weight: bold;
     font-size: 18px;
 }
 .team-sm{
-    margin-top:20px;
+    position: absolute;
+    bottom: 25px;
 }
 .team-sm li{
     display: inline-block;
@@ -378,16 +402,20 @@
     padding: 7px;
     background: rgba(255, 255, 255, 0.1);
     /* box-shadow: inset 1px -1px 1px rgb(214 214 214 / 40%), inset -1px 1px 1px rgb(255 255 255 / 40%); */
-    border:1px solid rgb(214 214 214 / 40%);
+    box-shadow: inset 0.4px -0.4px 0.4px rgba(214, 214, 214, 0.4), inset -0.4px 0.4px 0.4px rgba(255, 255, 255, 0.4);
+    /*border:1px solid rgb(214 214 214 / 40%);*/
     backdrop-filter: blur(11.6px);
     align-items: center;
     margin-right:12px;
 }
 .team-sm li a:hover{
-    /* box-shadow: inset 1px -1px 1px rgb(92 162 105), inset -1px 1px 1px rgb(185 13 13 / 100%); */
-    border:1px solid rgb(185 13 13 / 80%);
-    color: rgb(92, 162, 105);
+    box-shadow: inset 0.4px -0.4px 0.4px rgba(185, 13, 13, 0.4), inset -0.4px 0.4px 0.4px rgba(255, 255, 255, 0.4);    
+    background: rgba(185, 13, 13, 0.1);
     transition: 300ms;
+}
+.team-sm img:hover{
+    fill: rgba(185, 13, 13);
+
 }
 .team-sm li a i{
     margin:0 auto;
