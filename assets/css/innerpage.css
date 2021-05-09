@@ -30,9 +30,12 @@
     color:rgb(255, 255, 255);
     font-size:40px;
 }
-.inner-banner-text h1, .side-logo h3, .side-content h4, .nftfactsec h1, .nft-note h4, .breakdown h1, .team-heading h2{
+.inner-banner-text h1, .side-logo h3, .nftfactsec h1, .nft-note h4, .breakdown h1, .team-heading h2{
     font-family:'Reggae One', cursive;
     text-shadow: 0px 0px 15px rgba(185, 13, 13, 0.5), 0px 0px 3px rgba(238, 238, 238, 0.25), 0px 0px 6px #B90D0D;
+}
+.side-content h4{
+    font-family:'Reggae One', cursive;
 }
 .banner-logo-btn li{
     display: inline-block;
