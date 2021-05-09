@@ -1002,6 +1002,9 @@ footer{
 .fdeactive img{
     opacity: 0.5;
 }
+.fdeactive a{
+    opacity: 0.5 !important;
+}
 .footer-sm ul li a, .footermenu li a{
     position: relative;
 }
