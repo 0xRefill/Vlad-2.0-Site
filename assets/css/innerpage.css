@@ -53,7 +53,7 @@
 .innersec, .lifesec, .alifesec, .nftfactsec, .breakdown{
     padding:100px 0px 0px 0px;
 }
-.side-main, .team-blockbg{
+.side-main, .side-main-two, .team-blockbg{
     position: relative;
     z-index: 0;
 }
@@ -68,6 +68,18 @@
     min-height: 776px;
 }
 .side-main::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    right: 0%;
+    transform: translateX(15%);
+    top: 800px;
+    height: 50%;
+    background: url(../images/dropsplatter2.svg);
+    background-repeat: no-repeat;
+}
+.side-main-two::after{
     content: '';
     position: absolute;
     z-index: -1;
@@ -439,6 +451,9 @@ line-height: 22px;
     .side-main::after{
         transform: translateX(0%);
     }
+    .side-main-two::after{
+        transform: translateX(0%);
+    }
     .nftfact-block{
         min-height: 454px;
     }
@@ -464,7 +479,11 @@ line-height: 22px;
     }
     .side-main::after{
         transform: translateX(0%);
-        top: 469px;
+        top: 610px;
+    }
+    .side-main-two::after{
+        transform: translateX(0%);
+        top: 485px;
     }
     .nbs-flexisel-item{
         margin: 0!important;
