@@ -41,7 +41,7 @@
                     <button class="navbar-toggler" id="mbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse navbarshow" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 tp-nav">
                         <li class="nav-item">
                         <a class="nav-link" href="token-facts.html">Token Facts</a>
@@ -73,13 +73,7 @@
                     <div class="col-sm-12 col-md-8 inner-banner-text">
                         <h1>Token Facts</h1>
                         <p>Vlad.Finance consists of multiple tokens which are critical to the ecosystem including: $VLAD, $LIFE and $aLIFE. These tokens are core to the platform and will bring utility and function to its users.</p>
-                        <div class="banner-logo-btn">
-                            <ul>
-                                <li><a href="#" class="circle-logo"><i><img src="assets/images/vlad.svg" class="img-fluid" alt=""></i></a></li>
-                                <li><a href="#" class="circle-logo"><i><img src="assets/images/life.svg" class="img-fluid" alt=""></i></a></li>
-                                <li><a href="#" class="circle-logo"><i><img src="assets/images/alife.svg" class="img-fluid" alt=""></i></a></li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="downarrow bounce">
                         <a class=""href="#"><img src="assets/images/scroll-down-icon.svg" class="img-fluid" alt=""></a>
@@ -126,6 +120,9 @@
                             <h4>WHAT IS $VLAD</h4>
                             <p>A fair distribution rugproof reflect token on the BSC Chain. It auto yields rewards just for holding it. Every transaction incurs a 4% reflect fee (2%-holders , 2%-burn). $VLAD auto compounds in your wallet without doing anything. Hold and earn while others buy and sell to earn your part using our low reflect. The longer you hold the more you earn, working your way to immortality.</p>
                         </article>
+                        <div class="token-contract-container">
+                            <p>Contract Address: <a id="vladAddress" href="https://bscscan.com/token/0x279d41f3f78fe5c1f0ba41ae963d6e545113c973" target="_blank">0x279d41f3f78fe5c1f0ba41ae963d6e545113c973<i class="far fa-copy ms-2"></i></a></p>
+                        </div>
                     </div>
                     <div class="tokenomic">
                         <h4>TOKENOMICS</h4>
@@ -206,6 +203,9 @@
                             <h4>WHAT IS $LIFE</h4>
                             <p>This limited supply token is the only way to mint our exclusive NFTs which will get you a premium spot in our upcoming farms and marketplace. The $LIFE token was minted exclusively through our farming event using $VLAD LP tokens – which has ended at block #6343945. To unlock one of the Genesis VLAD NFTs you will have to burn your $LIFE.</p>
                         </article>
+                        <div class="token-contract-container">
+                            <p>Contract Address: <a id="lifeAddress" href="https://bscscan.com/token/0x50f4220C82c9325dC99f729C3328FB5c338BEaae" target="_blank">0x50f4220C82c9325dC99f729C3328FB5c338BEaae<i class="far fa-copy ms-2"></i></a></p>
+                        </div>
                     </div>
                     <div class="lifetokenomic">
                         <h4>TOKENOMICS</h4>
@@ -258,10 +258,26 @@
         <!-- Slider -->
         <div class="container">
             <div class="nftfactslide">
-                <ul class="rotator">
+                                <ul class="rotator">
+                    <!-- NFT Fact Block 1 -->
                     <li>
                         <div class="nftfact-block">
-                            <img src="assets/images/pepechocula.png" alt="" class="img-fluid">
+                            <img src="assets/images/count-pepes-drakul.jpg" alt="count pepes drakul" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Vlad Pepes Drakul</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Vladiator</span></p>
+                                <p>Supply<span>2,222</span></p>
+                                <p>LIFE to Mint<span>10</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 2 -->
+                    <li>
+                        <div class="nftfact-block">
+                            <img src="assets/images/count-pepes-chocula.jpg" alt="count pepes chocula" class="img-fluid">
                             <div class="nft-head">
                                 <h6>Count Pepes Chocula</h6>
                                 <P>By <a href="#">@girmik</a></P>
@@ -273,32 +289,157 @@
                             </div>
                         </div>
                     </li>
-                    <li><div class="nftfact-block">
-                        <img src="assets/images/pepedrakul.png" alt="" class="img-fluid">
-                        <div class="nft-head">
-                            <h6>Vlad Pepes Drakul</h6>
-                            <P>By <a href="#">@girmik</a></P>
+                    <!-- NFT Fact Block 3 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/papes-in-stone.jpg" alt="papes in stone" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Pepes in Stone</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Vladiator</span></p>
+                                <p>Supply<span>2,222</span></p>
+                                <p>LIFE to Mint<span>10</span></p>
+                            </div>
                         </div>
-                        <div class="nft-smcontent">
-                            <p>Rarity<span>Vladiator</span></p>
-                            <p>Supply<span>2,222</span></p>
-                            <p>LIFE to Mint<span>10</span></p>
+                    </li>
+                    <!-- NFT Fact Block 4 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/pathtovladhalla.jpg" alt="path to vladhalla" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>The Path to Vladhalla</h6>
+                                <P>By <a href="https://twitter.com/ApekshaKulkar14" target="_blank">@ApekshaKulkar14</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Rare</span></p>
+                                <p>Supply<span>666</span></p>
+                                <p>LIFE to Mint<span>100</span></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                    <li><div class="nftfact-block">
-                        <img src="assets/images/pepestone.png" alt="" class="img-fluid">
-                        <div class="nft-head">
-                            <h6>Pepes in Stone</h6>
-                            <P>By <a href="#">@girmik</a></P>
+                    </li>
+                    <!-- NFT Fact Block 3 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/painted-pepe.jpg" alt="Painted Pepes" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Painted Pepes</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Rare</span></p>
+                                <p>Supply<span>666</span></p>
+                                <p>LIFE to Mint<span>100</span></p>
+                            </div>
                         </div>
-                        <div class="nft-smcontent">
-                            <p>Rarity<span>Vladiator</span></p>
-                            <p>Supply<span>2,222</span></p>
-                            <p>LIFE to Mint<span>10</span></p>
+                    </li>
+                    <!-- NFT Fact Block 3 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/all-hail-vlad.jpg" alt="All Hail Vlad" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>All Hail Vlad</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Rare</span></p>
+                                <p>Supply<span>666</span></p>
+                                <p>LIFE to Mint<span>100</span></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                    <!-- NFT Fact Block 3 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/bankofvlad.jpg" alt="Bank of Vladhalla" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Bank of Vladhalla</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Epic</span></p>
+                                <p>Supply<span>66</span></p>
+                                <p>LIFE to Mint<span>350 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 8 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/gate-of-vladhalla.jpg" alt="Gates of Vladhalla" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>The Gates of Vladhalla</h6>
+                                <P>By <a href="https://twitter.com/Sushinobi_nft" target="_blank">Sushinobi</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Epic</span></p>
+                                <p>Supply<span>66</span></p>
+                                <p>LIFE to Mint<span>350 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 9 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/silver-pepes.jpg" alt="Silver Pepes" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Silver Pepes</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Epic</span></p>
+                                <p>Supply<span>66</span></p>
+                                <p>LIFE to Mint<span>350 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 10 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/golden-pepes.jpg" alt="Golden Pepes" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Golden Pepes</h6>
+                                <P>By <a href="#">@girmik</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Legendary</span></p>
+                                <p>Supply<span>6</span></p>
+                                <p>LIFE to Mint<span>1200 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 11 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/immortality.jpg" alt="Immortality" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>Immortality</h6>
+                                <P>By <a href="https://twitter.com/Sushinobi_nft" target="_blank">Sushinobi</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Legendary</span></p>
+                                <p>Supply<span>6</span></p>
+                                <p>LIFE to Mint<span>1200 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- NFT Fact Block 12 -->
+                    <li>
+                        <div class="nftfact-block">
+                        <img src="assets/images/vlad-father.jpg" alt="Vlad Father" class="img-fluid">
+                            <div class="nft-head">
+                                <h6>The Vlad Father</h6>
+                                <P>By <a href="https://twitter.com/Sushinobi_nft" target="_blank">Sushinobi</a></P>
+                            </div>
+                            <div class="nft-smcontent">
+                                <p>Rarity<span>Legendary</span></p>
+                                <p>Supply<span>6</span></p>
+                                <p>LIFE to Mint<span>1200 (*)</span></p>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
             <div class="row">
@@ -407,6 +548,9 @@
                             <h4>WHAT IS $aLIFE</h4>
                             <p>aLIFE will be the token used for NFT minting on VLAD Finance’s v2 platform. The majority of aLIFE will be emitted through our liquidity farming event. Each NFT minted will lock a portion of $aLIFE in the NFT to offer immediate liquidity when needed by its owner. Of the NFT sale, a majority is paid out to the original artist and a small portion goes to the treasury for VLAD Finance development funds. $VLAD stakers will also share a portion of profits from the sale.</p>
                         </article>
+                        <div class="token-contract-container">
+                            <p>Contract Address: <a id="alifeAddress" href="https://bscscan.com/token/0x50f4220C82c9325dC99f729C3328FB5c338BEaae" target="_blank">0x50f4220C82c9325dC99f729C3328FB5c338BEaae<i class="far fa-copy ms-2"></i></a></p>
+                        </div>
                     </div>
                     <div class="alifetokenomic">
                         <h4>TOKENOMICS</h4>
@@ -471,7 +615,7 @@
                         <li><a href="index.html"><img src="assets/images/vladcirclelogo.png" class="img-fluid" alt="Vlad Finance"></a></li>
                     </ul>
                     <h4>Vlad.Finance</h4>
-                    <P>Come for the Immortality. <br/> Stay for the NFTs.</P>
+                    <P>Come for the Immortality. </br> Stay for the NFTs.</P>
                     <ul class="footermenu">
                         <li><a href="token-facts.html">TOKEN FACTS</a></li>
                         <li><a href="https://app.vlad.finance/nft" target="_blank">NFTs</a></li>
@@ -489,7 +633,7 @@
                             </ul>
                         </div>
                         <div class="col-sm-12 col-md-3">
-                            <h6>$Vlad</h6>
+                            <h6>$VLAD</h6>
                             <ul>
                                 <li><a href="https://bscscan.com/token/0x279d41f3f78fe5c1f0ba41ae963d6e545113c973" target="_blank"><img src="assets/images/fbscscanlogo.svg" class="img-fluid" alt="">BSCScan</a></li>
                                 <li><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0x279d41f3f78fe5c1f0ba41ae963d6e545113c973" target="_blank"><img src="assets/images/fpancakeswap.svg" class="img-fluid" alt="">Buy $VLAD</a></li>

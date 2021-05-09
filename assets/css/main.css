@@ -28,6 +28,18 @@ body{
     position:relative;
     background: rgb(13,14,19);
 }
+h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 29px;
+    /* identical to box height, or 181% */
+    align-items: center;
+    margin-bottom: 0;
+}
+footer h6{
+    letter-spacing: 0.15em;
+}
 .body-bg{
     background: url(../images/bg-banner.jpg) no-repeat;
     /* position: absolute;
@@ -38,7 +50,9 @@ body{
     background-size: cover;
     background-position: 70% 0;
     padding-bottom: 25px;
-    height: 95vh;    
+    height: 95vh;
+    position: relative;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 1));
 }
 .top-sm-nav{
     margin:0;
@@ -50,8 +64,8 @@ body{
 .top-sm-nav li a{
     display: flex;
     align-items: center;
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     margin-left:15px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: inset 0.4px -0.4px 0.4px rgba(214, 214, 214, 0.4), inset -0.4px 0.4px 0.4px rgba(255, 255, 255, 0.4);
@@ -109,8 +123,8 @@ body{
     height: 68px;
     display:inline-block;
     margin-right:10px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(172, 0, 0,0.35); 
-    box-shadow: 5px 5px 15px 5px rgba(172, 0, 0,0.35);
+    -webkit-box-shadow: 0px 12px 15px 3px rgba(172, 0, 0,0.35); 
+    box-shadow: 0px 12px 15px 3px rgba(172, 0, 0,0.35);
     border-radius: 50%;
 }
 .navbar-brand{
@@ -119,19 +133,8 @@ body{
     display: flex;
     align-items: center;
 }
-.navbarshow{
-    padding: 15px;
-    text-align: center;
-    background: rgba(31, 34, 41, 0.1);
-    border: 0.75px solid #484848;
-    box-sizing: border-box;
-    box-shadow: 0px 16px 16px 8px rgb(0 0 0 / 25%), inset 62.7333px -62.7333px 62.7333px rgb(24 26 31 / 10%), inset -62.7333px 63px 62.7333px -59px rgb(255 255 255 / 10%);
-    backdrop-filter: blur(45px);
-    border-radius: 8px;
-}
-.navbarshow ul{
-    text-align: center;
-    display: inline;
+.navbar-dark .navbar-toggler{
+    backdrop-filter: blur(5px);
 }
 /* Start of Banner */
 .banner{
@@ -173,6 +176,7 @@ body{
     backdrop-filter: blur(11.6px);
 }
 .cto-btn{
+    font-size: 12px;
     font-weight: 800;
     margin-top: 24px;
     letter-spacing: 0.15em;
@@ -192,6 +196,8 @@ body{
 .downarrow {
     text-align: left;
     margin-top: 10%;
+    position: absolute;
+    bottom: 3%;
   }
   .bounce {
     -webkit-animation: bounce 5s infinite;
@@ -204,12 +210,15 @@ body{
     80%,
     100% {
       transform: translateY(0);
+    -ms-transform: translateY(0);
     }
     40% {
       transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
     }
     60% {
       transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
     }
   }
   @keyframes bounce {
@@ -219,19 +228,21 @@ body{
     80%,
     100% {
       transform: translateY(0);
+      -ms-transform: translateY(0);
     }
     40% {
       transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
     }
     60% {
       transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
     }
   }
   
 /* End of Arrow Bounce CSS */
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background: rgba(185, 13, 13, 0.15);
-    backdrop-filter: blur(11.6px);
     border-radius: 4px;
     color:#B90D0D;
 }
@@ -242,7 +253,7 @@ body{
     border-radius: 4px;
     color:#ffffff;
     font-size: 20px;
-    padding: 12px 80px 12px 70px;
+    padding: 12px 130px 12px 25px;
 }
 .ctm-pills button:hover {
     color: #B90D0D;
@@ -275,7 +286,10 @@ color: #B90D0D;
     text-shadow: 0px 0px 15px rgba(185, 13, 13, 0.5), 0px 0px 3px rgba(238, 238, 238, 0.25), 0px 0px 6px #B90D0D;
 }
 .mt-6{
-    margin-top:5rem;
+    margin-top: 5rem;
+}
+.mt-5{
+    margin-top: 5rem!important;
 }
 .ptb{
     padding: 100px 0px 120px 0px;
@@ -323,10 +337,13 @@ color: #B90D0D;
 }
 .about, .roadmap-sec {
     background: radial-gradient(50% 50% at 50.03% 50%, #151821 41.15%, #0D0E13 86.85%);
-    z-index: 0;
+    z-index: -100;
 }
-.about, .token-fact, .token-sec, .roadmap-sec, .blurbg, .nftmining{
-    padding:60px 0px;
+.token-fact, .token-sec, .roadmap-sec, .blurbg, .nftmining{
+    padding: 80px 0px;
+}
+.about{
+    padding: 150px 0px 80px 0px;
 }
 .about h1, .token-fact h1, .roadmap h1, .token-sec h1, .faq-block h1{
     position: relative;
@@ -413,8 +430,8 @@ color: #B90D0D;
     z-index: -1;
     width: 24%;
     right: 0%;
-    transform: translateX(15%);
-    bottom: -103px;
+    transform: translateX(30%);
+    bottom: -160px;
     height: 71%;
     background: url(../images/dropsplatter2.svg);
     background-repeat: no-repeat; 
@@ -423,11 +440,11 @@ color: #B90D0D;
     margin: 0px 48px;
 }
 .content-head1::before{
-    background-image: url(../images/VLAD-logo.svg);
+    background-image: url(../images/Vlad-logo.svg);
     background-repeat:no-repeat;
 }
 .content-head2::before{
-    background-image: url(../images/life.svg);
+    background-image: url(../images/Life-logo.svg);
     background-repeat:no-repeat;
 }
 .content-head3::before{
@@ -439,14 +456,14 @@ color: #B90D0D;
     padding: 25px 25px 25px 70px;
 }
 .content-head1 h4, .content-head2 h4, .content-head3 h4 {
-    margin-bottom: 0rem !important;
+    margin-bottom: .5rem !important;
 }
 .content-head1::before, .content-head2::before, .content-head3::before{
     content: '';
     position: absolute;
     left:0;
-    width: 48px;
-    height: 48px;
+    width: 52px;
+    height: 52px;
 }
 .content-head1 a, .content-head2 a, .content-head3 a{
     color: #B90D0D;
@@ -471,6 +488,22 @@ color: #B90D0D;
 }
 .roadmap{
     margin-bottom: 40px;
+}
+.roadmap-graphic{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.roadmap-mobile{
+    display: none;
+}
+@media only screen and (max-width: 425px){
+    .roadmap-desktop{
+        display: none;
+    }
+    .roadmap-mobile{
+        display: block;
+    }
 }
 .no-padding{
     padding:0;
@@ -693,6 +726,7 @@ color: #B90D0D;
 .smbtn{
     display: flex;
     align-items: center;
+    margin-left: -125px;
 }
 .smbtn ul li a{
     border: 1.5px solid #FFFFFF;
@@ -782,10 +816,11 @@ color: #B90D0D;
 
   /* NFT Section */
   .nftbg{
-      background-image: url(../images/nftbg.png);
+      /*background-image: url(../images/nftbg.png);*/
       background-repeat: no-repeat;
       background-size: cover;
-      height: 100vh;
+      height: 110vh;
+      background: radial-gradient(69.48% 134.06% at 77.85% 50%, #340100 0%, rgba(0, 0, 0, 0) 100%);
   }
   .nftbg .container {
     top: 50%;
@@ -999,14 +1034,14 @@ footer{
     height: 68px;
     display: inline-block;
     margin-right: 10px;
-    -webkit-box-shadow: 5px 9px 15px 3px rgb(237 45 45 / 25%);
-    box-shadow: 5px 9px 15px 3px rgb(237 45 45 / 25%);
+    -webkit-box-shadow: 0px 12px 15px 3px rgb(172 0 0 / 25%);
+    box-shadow: 0px 12px 15px 3px rgb(172 0 0 / 25%);
     border-radius: 50%;
 }
 .footer-logoblock ul li a{
     color: #fff;
-    text-decoration: none;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 40px;
     font-weight: bold;
 }
 .fo-coinmaker ul li a{
@@ -1024,30 +1059,54 @@ footer{
     color:#525252;
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+    /* Mobile Menu */
+    .top-sm-nav li a{
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        margin-top: 20px;
+    }
+    .banner h1{
+        font-size: 32px;
+        text-align: left; 
+    }
+    .banner p{
+        text-align: left;
+    }
     .reverse{
         flex-direction: column-reverse;
     }
+    .artist-lunch{
+        margin-top: 1rem !important;
+    }
+    .nft-art{
+        margin: 60px 0px 0px 20px;
+    }
     .nft-1{
-        top:156px;
+        top: 175px;
     }
     .nft-2{
-        width: 210px;
-        top: -100px;
-        left: 109px;
+        width: 220px;
+        top: -35px;
+        left: 135px;
 
     }
     .nft3{
         top:32px;
     }
     .nft-art-content {
-        margin-top: 317px;
+        margin-top: 350px;
     }
     .token-block {
-        padding: 12px;
+        padding: 24px;
+    }
+    .token-sec h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
     }
     .cto-btn{
-        padding: 10px 9px;
-        margin-right: 18px;
+        padding: 8px 18px;
+        margin-right: 8px;
     }
     .mview{
         display:unset!important;
@@ -1056,7 +1115,10 @@ footer{
         margin: 0;
     }
     .content-head1 a, .content-head2 a, .content-head3 a{
-        font-size:8.5px;
+        font-size: 14px;
+        word-break: break-all;
+        margin-top: 8px;
+        line-height: 10px; 
     }
     .token-w::before{
         width: 100%;
@@ -1150,7 +1212,55 @@ footer{
     .nft-block{
         margin-bottom: 30px;
     }
+
+    /* unique Vlad NFTs */
+    .nftbg .container {
+        transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+
+    /* NFT MINTING LIVE */
+    .nft-rightblock{
+        margin: 50px 0px;
+    }
+
+    /*footer spacing*/
+    .footer-logoblock, .footer-sm{
+        left: -50%;
+        transform: translateX(10%);
+    }
+    footer h6{
+        margin-top: 3rem;
+    }
+    .footer-sm ul {
+        margin-top: 0;
+    }
+    li{
+        line-height: 40px;
+    }
+    .navbarshow{
+    padding: 15px;
+    text-align: center;
+    background: rgba(31, 34, 41, 0.1);
+    border: 0.75px solid #484848;
+    box-sizing: border-box;
+    box-shadow: 0px 16px 16px 8px rgb(0 0 0 / 25%), inset 62.7333px -62.7333px 62.7333px rgb(24 26 31 / 10%), inset -62.7333px 63px 62.7333px -59px rgb(255 255 255 / 10%);
+    backdrop-filter: blur(15px);
+    border-radius: 8px;
+    }
+    .navbarshow ul{
+    text-align: center;
+    display: inline;
+    }
+    .smbtn {
+        margin-left: 0px;
+        margin-top: -2em;
+    }
 }
+
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .smbtn ul{
         margin:0 auto;
@@ -1195,7 +1305,7 @@ footer{
         width: 100%;
     }
     .faq-wrap, .form-wrap {
-        padding: 20px 15px;
+        padding: 70px 15px;
     }
     .coming-soon img, .coming-soon2 img{
         width: 300px;
@@ -1211,7 +1321,7 @@ footer{
 
 @media(min-width:375px){
     .banner{
-        text-align: center;
+        text-align: left;
         margin: 54px 0px 0px;
     }
     .banner-btn{
@@ -1227,7 +1337,7 @@ footer{
         padding-bottom:0;
     }
     .faq-wrap, .form-wrap{
-        padding: 20px 15px;
+        padding: 70px 15px;
     }
     .faq-block, .form-block{
         width:100%;
@@ -1244,12 +1354,16 @@ footer{
     left: 50%;
     transform: translateX(-50%);
     }
-
+}
+@media (min-width: 768px){
+    .col-md-8{
+        text-align: left;
+    }
 }
 @media (min-width: 812px){
         .top-sm-nav li a div img {
-        width: 26px;
-        height: 26px;
+        width: 28px;
+        height: 28px;
         }                       
         .about-block a{
         min-height: 571px;
@@ -1277,6 +1391,7 @@ footer{
         }
         .banner-text{
             margin-top: 100px;
+            text-align: left;
         }
         .about-block a {
             min-height: 474px;
